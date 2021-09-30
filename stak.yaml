@@ -1,0 +1,6 @@
+version: 1
+requires:
+  - uses: python
+    with:
+      version: 3.8
+      run_script: uvicorn main:app
