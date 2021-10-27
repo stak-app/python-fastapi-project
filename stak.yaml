@@ -1,6 +1,12 @@
 version: 1
-requires:
-  - uses: python
+
+import:
+  python:
     with:
-      version: '38'
-      run_script: uvicorn main:app
+      version: 3.9
+      module: main:app
+  
+commands:
+  default: 
+    steps:
+       - from: python:start
