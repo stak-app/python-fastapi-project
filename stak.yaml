@@ -3,7 +3,7 @@ version: 1
 import:
   python:
     with:
-      version: 3.9
+      version: 3.12
       module: main:app
   
 commands:
